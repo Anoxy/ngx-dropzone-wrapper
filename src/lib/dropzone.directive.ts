@@ -19,6 +19,7 @@ export class DropzoneDirective {
 
   @Input('dropzone') config: DropzoneConfigInterface;
 
+  @Output('init'               ) dz_init                = new EventEmitter<any>();
   @Output('drop'               ) dz_drop                = new EventEmitter<any>();
   @Output('dragstart'          ) dz_dragstart           = new EventEmitter<any>();
   @Output('dragend'            ) dz_dragend             = new EventEmitter<any>();

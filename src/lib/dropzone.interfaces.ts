@@ -10,6 +10,7 @@ export const DropzoneEvents = [
   'addedfile',
   'removedfile',
   'thumbnail',
+  'init',
   'error',
   'processing',
   'uploadprogress',
@@ -98,7 +99,7 @@ export class DropzoneConfig implements DropzoneConfigInterface {
   resize: any;
   fallback: any;
   renameFilename: any;
-  
+
   previewsContainer: any;
   hiddenInputContainer: any;
 

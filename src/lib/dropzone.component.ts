@@ -28,7 +28,8 @@ export class DropzoneComponent implements OnInit, DoCheck, OnDestroy, OnChanges 
 
   @HostBinding('class.dropzone') @Input() useDropzoneClass: boolean = true;
   @HostBinding('class.dz-wrapper') @Input() useDzWrapperClass: boolean = true;
-
+  
+  @Output('init'               ) dz_init                = new EventEmitter<any>();
   @Output('drop'               ) dz_drop                = new EventEmitter<any>();
   @Output('dragstart'          ) dz_dragstart           = new EventEmitter<any>();
   @Output('dragend'            ) dz_dragend             = new EventEmitter<any>();
